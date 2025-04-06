@@ -38,13 +38,17 @@ const Navbar = () => {
           <div className="flex items-center justify-center gap-4 mr-2 cursor-pointer text-lg">
             <h1 onClick={() => navigate("/")}>Home</h1>
             {/* <a href="#stories">Stories</a> */}
-            <h1 onClick={() => navigate("/submit-problem")}>
-              Submit A Challenge
-            </h1>
+            {user && (
+              <h1 onClick={() => navigate("/submit-problem")}>
+                Submit A Challenge
+              </h1>
+            )}
             {user?.role === "Spurti Volunteer" && (
               <h1 onClick={() => navigate("/verify-problem")}>Verify</h1>
             )}
-            <h1 onClick={() => navigate("/problem-posts")}>Contribute</h1>
+            {user && (
+              <h1 onClick={() => navigate("/problem-posts")}>Contribute</h1>
+            )}
           </div>
           {/* Authentication UI */}
           {user ? (
