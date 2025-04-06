@@ -11,7 +11,7 @@ const VerifyProblem = () => {
   const fetchProblems = async () => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/verify/allProblems`,
+        `https://spurti-j9xz.onrender.com/verify/allProblems`,
         {
           withCredentials: true,
         }
@@ -28,7 +28,7 @@ const VerifyProblem = () => {
   const updateProblemStatus = async (id, status) => {
     try {
       const response = await axios.put(
-        `${import.meta.env.VITE_API_URL}/verify/updateStatus`,
+        `https://spurti-j9xz.onrender.com/verify/updateStatus`,
         { problemId: id, status },
         { withCredentials: true }
       );

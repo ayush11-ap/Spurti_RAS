@@ -49,7 +49,7 @@ const SignUp = () => {
     };
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/user/register`,
+        `https://spurti-j9xz.onrender.com/user/register`,
         submissionData,
         { withCredentials: true }
       );

@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/user/login`,
+        `https://spurti-j9xz.onrender.com/user/login`,
         {
           email: email,
           password: password,

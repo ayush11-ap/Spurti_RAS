@@ -17,7 +17,7 @@ const ProblemPostsPage = () => {
     const fetchProblems = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/problem/verifiedProblems`,
+          `https://spurti-j9xz.onrender.com/problem/verifiedProblems`,
           { withCredentials: true }
         );
         setVerifiedProblems(response.data.problems);
@@ -31,7 +31,7 @@ const ProblemPostsPage = () => {
   const handleUpvote = async (problemId) => {
     try {
       const response = await axios.patch(
-        `${import.meta.env.VITE_API_URL}/problem/upvote/${problemId}`,
+        `https://spurti-j9xz.onrender.com/problem/upvote/${problemId}`,
         {},
         { withCredentials: true }
       );

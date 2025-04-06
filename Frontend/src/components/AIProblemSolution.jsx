@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { useSelector } from "react-redux";
 
 const ai = new GoogleGenAI({
-  apiKey: `${import.meta.env.VITE_GOOGLE_GENAI_API_KEY}`,
+  apiKey: `AIzaSyDYkUjmr73tzB_NxllNZkfyovNK_2xVuic`,
 });
 
 const AIProblemSolution = ({ setShowAiSolution, problem }) => {

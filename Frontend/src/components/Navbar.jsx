@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/user/logout`,
+        `https://spurti-j9xz.onrender.com/user/logout`,
         {},
         { withCredentials: true }
       );
