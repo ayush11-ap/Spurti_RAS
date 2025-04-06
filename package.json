@@ -4,9 +4,9 @@
   "description": "A Decentalised Platform",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/src/app.js",
+    "dev": "nodemon Backend/src/app.js",
     "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
-    "start": "nodemon backend/src/app.js",
+    "start": "nodemon Backend/src/app.js",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
   },
